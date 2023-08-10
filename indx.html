@@ -1,0 +1,164 @@
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .content{
+            width: 300px;
+            height: 500px;
+            border-radius: 10px;
+            margin: 35px 0;
+            margin-left: 100px;
+        }
+        .image{
+            width: 300px;
+            height: 230px;
+            box-shadow: 2px 5px 10px #d3d3d3;
+        }
+        .texto{
+            width: 300px;
+            height: 230px;
+            box-shadow: 2px 5px 10px #000;
+
+        }
+        hr{
+            margin: 15px;
+        }
+        img{
+            width: 100px;
+            height: 110px;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: translateX(100px)scale(2.0) rotate(-40deg);
+            transform: translateY(10px)scale(2.0)rotate(-40deg);
+        }
+        .btn{
+            width: 210px;
+            height: 40px;
+            font-size: 15pt;
+            border: none;
+            border-radius: 5px;
+            background-image: -webkit-linear-gradient(45deg, black 50%, transparent 50%);
+            background-image: linear-gradient(45deg, black, transparent 50%);
+            background-position: 100%;
+            background-size: 400%;
+            -webkit-transition: 300ms ease-in-out;
+            transition: 300ms ease-in-out;
+
+        }
+        .btn:hover{
+            color: #fff;
+            background-position: 0;
+            cursor: pointer;
+
+        }
+        .piscar{
+            color: red;
+        }
+        @keyframes fas_piscar{
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0
+                ;
+            }
+        }
+        .piscar{
+            -webkit-animation: fas_piscar .90s
+            linear infinite;
+            -moz-animation: fas_piscar .90s
+            linear infinite;
+            -ms-animation: fas_piscar .90s
+            linear infinite;
+            -o-animation: fas_piscar .90s
+            linear infinite;
+            animation: fas_piscar .90s
+            linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <img src="assests/salto.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Produto - 1</h1>
+                <hr>
+                <p>R$500,00</p>
+                <button class="btn">Adicionar Carrinho
+                    <i class="fa fas fa-cart-plus piscar"style"font-size:30px"></i>
+            </button>
+            </div>
+            </div>
+            <div class="content">
+                <div class="image">
+                    <img src="assests/celular.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Produto - 2</h1>
+                    <hr>
+                    <p>R$9800,00</p>
+                    <button class="btn">Adicionar Carrinho 
+                    <i class="fa fas fa-cart-plus piscar"style"font-size:30px"></i>
+                </button>
+                </div>
+            </div>
+                <div class="content">
+                    <div class="image">
+                        <img src="assests/tenis.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Produto - 3</h1>
+                        <hr>
+                        <p>R$200,00</p>
+                        <button class="btn">Adicionar Carrinho
+                            <i class="fa fas fa-cart-plus piscar"style"font-size:30px"></i>
+                        </button>
+                    </div>
+                </div>
+                    <div class="content">
+                        <div class="image">
+                            <img src="assests/pc.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h1>Produto - 4</h1>
+                            <hr>
+                            <p>R$1599,99</p>
+                            <button class="btn">Adicionar Carrinho
+                                <i class="fa fas fa-cart-plus piscar"style"font-size:30px"></i>
+                            </button>
+                        </div>
+                    </div>
+                        <div class="content">
+                            <div class="image">
+                                <img src="assests/mesa.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h1>Produto - 5</h1>
+                                <hr>
+                                <p>R$780,00</p>
+                                <button class="btn">Adicionar Carrinho
+                                    <i class="fa fas fa-cart-plus piscar"style"font-size:30px"></i>
+                                </button>
+                        </div>
+                            </div>
+        </div>
+    </div>
+</body>
+</html>

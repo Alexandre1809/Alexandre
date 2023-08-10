@@ -1,0 +1,156 @@
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #444; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .rank-table {
+    border-collapse: collapse;
+    cursor: pointer;
+    background-color: #ffffff; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+    border-bottom-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    overflow: hidden; 
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+
+  }
+
+  .rank-table th,
+  .rank-table td {
+    padding: 2px 4px;
+    border: 0px solid #ffffff;
+    color: #000; 
+  }
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+  
+  .rank-table th {
+    background-color: #055f94; 
+    font-weight: bold;
+  }
+
+  
+  .rank-table .rank-item {
+    display: none; 
+  }
+
+  .rank-table:hover .rank-item {
+    display: table-row; 
+  }
+
+  
+  .rank-number {
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  tr:hover:nth-child(1n + 2) {
+    background-color: #b5dfc0;
+    color: #fff;
+  }
+  @media only screen and (max-width: 1200px) {
+        .rank {
+            width: 40%;
+            margin: 5px 0;
+
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .rank {
+            width: 80%;
+            margin: 10px 0;
+
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .rank {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+    @media (max-width: 767px){
+      .rank thead{
+        display: none;
+      }
+      .rank td{
+        display: flex;
+        justify-content: space-between;
+      }
+      .rank tr{
+        display: block;
+      }
+      .rank td:first-of-type{
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+        display: block;
+      }
+    }
+
+</style>
+</head>
+<body>
+    <table class='rank-table'>
+        <thead>
+          <tr>
+            <th>Ranking</th>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Quantidade Atual</th>
+            <th>Quantidade Anterior</th>
+            <th>Percentual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <tr>
+              <td>1º</td>
+              <td><img src='assets/ney.jpg' alt="Foto 6" width="50"></td>
+              <td>Neymar</td>
+              <td>5600</td>
+              <td>2000</td>
+              <td>30%</td>
+            </tr>
+
+          
+         
+</body>

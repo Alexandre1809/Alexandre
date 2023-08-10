@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100v;
+    background: #161623;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);;
+
+}
+.container .card .content{
+padding: 20px;
+text-align: center;
+transform: translateY(100px);
+opacity: 0;
+transition: 0.5s;
+}
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card um</h3>
+                <p>
+                    texto ilustrativo para base de apresentação, isto é onde colocamos qualquer texto descritivo sendo ele um produto ou alguém. 
+                    <a href="#">Mais informações</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card dois</h3>
+                <p>
+                    texto ilustrativo para base de apresentação, isto é onde colocamos qualquer texto descritivo sendo ele um produto ou alguém. 
+                    <a href="#">Mais informações</a>
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card tres</h3>
+                <p>
+                    texto ilustrativo para base de apresentação, isto é onde colocamos qualquer texto descritivo sendo ele um produto ou alguém. 
+                    <a href="#">Mais informações</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.js">
+    </script>
+    <script type="">
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>

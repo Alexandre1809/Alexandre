@@ -1,0 +1,169 @@
+<style>
+body {
+  background: #000;
+}
+
+section {
+  width: 500px;
+  margin: 50px auto;
+}
+
+.face {
+  width: 280px;
+  height: 380px;
+  perspective: 700px;
+  margin: 10px;
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 700ms;
+  
+}
+img{
+  border-radius: 20px;
+}
+
+.front {
+  background: url('ney.jpg') center top no-repeat;
+  z-index: 1;
+  background-size: 550px;
+}
+
+.back {
+  background: lightslategray;
+  background: url('ney.jpg') center top no-repeat; /* LEMBRE-SE MESMO TAMANHO DE FOTO*/
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  background-size: 550px;
+}
+
+.face:hover .front {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.face:hover .back {
+  transform: rotateY(0);
+  z-index: 1;
+}
+.face h2{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 8px;
+}
+.face p{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 5px;
+  text-align: left;
+  opacity: 0.6;
+}
+@media screen and (max-width: 400px) {
+        .face {
+            width: 200px;
+            height: 300px;
+            margin-left: 20px;
+    }
+    .front, .back{
+      background-size: 450px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+        .face {
+            width: 200px;
+            height: 290px;
+            margin: 5px;
+    }
+    .front, .back{
+      background-size: 400px;
+    }
+    .front h2, p{
+      font-size: 90%;
+    }
+  }
+  @media screen and (max-width: 243px) {
+        .face {
+            width: 150px;
+            height: 220px;
+            position: relative;
+      
+    }
+    .front, .back{
+      background-size: 310px;
+    }
+    .front h2, p{
+      font-size: 70%;
+    }
+  }
+
+  
+@media screen and (max-height: 500px) {
+        .face {
+            width: 250px;
+            height: 290px;
+            margin-left: 20px;
+    }
+    .front, .back{
+      background-size: 400px;
+    }
+    .front h2, p{
+      font-size: 90%;
+    }
+  }
+  
+@media screen and (max-height: 400px) {
+        .face {
+            width: 200px;
+            height: 180px;
+            margin-left: 20px;
+    }
+    .front, .back{
+      background-size: 300px;
+    }
+    .front h2, p{
+      font-size: 90%;
+    }
+  }
+  
+@media screen and (max-height: 350px) {
+        .face {
+            width: 120px;
+            height: 200px;
+            margin-left: 20px;
+            margin: 4px;
+    }
+    .front, .back{
+      background-size: 300px;
+    }
+    .front h2, p{
+      font-size: 70%;
+    }
+  }
+
+</style>
+<body>
+  <section>
+    <div class='face'>
+        <div class='img'>
+            <span></span>
+        </div>
+      <div class='front'>
+        <h2>Neymar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illum quis fugit in eligendi praesentium et tempora nulla, ipsam voluptates saepe odit hic enim similique sint nobis libero cumque ullam?</p>
+      </div>
+
+      <div class='back'>
+        <div class='img'>
+            <span></span>
+        </div>
+        <h2>Neymar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et qui accusamus? Quidem, doloremque, expedita et molestiae natus architecto veniam sint sit voluptatem nemo, reiciendis quis blanditiis. Consequuntur, officiis praesentium!</p>
+      </div>
+    </div>
+  </section>
+</body>
+
